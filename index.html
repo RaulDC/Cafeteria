@@ -2,67 +2,215 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafetería El Aroma</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>El Aroma</title>
+
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
-    <header>
-        <h1>Cafetería El Aroma</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#ubicacion">Ubicación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+
+    <!-- INICIO DE MENÚ -->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/Logo_AE.png" alt="" class="img-fluid logos">
+                </a>
+
+            </div>
+
+            <div class="enlaces" id="enlaces">
+                <a href="#"> Inicio</a>
+                <a href="#"> Sabores del mes</a>
+                <a href="#"> Servicios</a>
+                <a href="#"> Carta</a>
+                <a href="#"> Reserva</a>
+                <a href="#"> Contacto</a>
+            </div>
         </nav>
     </header>
+    <!-- FIN DE MENÚ -->
 
-    <section id="inicio">
-        <h2>Bienvenido a Cafetería El Aroma</h2>
-        <p>Servimos el mejor café y deliciosos pasteles.</p>
-        <img src="img/taza_cafe.jpeg" alt="Taza de café">
-    </section>
+    <main>
+        <!-- INICIO DE BANNER -->
+        <section class="banner">
+            <img src="img/inicio.jpg" alt="" class="img-fluid banner-img">
+            <div class="container">
+                <div class="row centrado">
+                    <div class="banner-data">
+                        <h1 class="banner-titulo"> LA ESENCIA DE NUESTRO CAFÉ EN CADA TAZA</h1></br>
+                        <a href="#reservar-btn" class="banner-boton">Reservar ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN DE BANNER -->
 
-    <section id="menu">
-        <h2>Menú</h2>
-        <ul>
-            <li><img src="img/Cafe_Espresso.jpeg" alt="Café Espresso"><br>Café Espresso</li>
-            <li><img src="img/cafe_latte.jpg" alt="Café Latte"><br>Café Latte</li>
-            <li><img src="img/pastel_chocolate.jpeg" alt="Pastel de Chocolate"><br>Pastel de Chocolate</li>
-            <li><img src="img/cruasanes.jpg" alt="Croissant"><br>Croissant</li>
-        </ul>
-    </section>
+        <br><br><br><br>
 
-    <section id="ubicacion">
-        <h2>Ubicación</h2>
-        <p>Estamos ubicados en:</p>
-        <address>
-            123 Calle Principal<br>
-            Ciudad, País
-        </address>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-75.123456!3d40.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI2JzMzLjEiTiA3NcKwMjQnMzAuNyJX!5e0!3m2!1sen!2sus!4v1626371322485!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+        <!-- INICIO CARDS -->
+        <div class="container">
+            <h2 class="CHB-titulo">SABORES DEL MES</h2><br>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/c_caféamericano.png" alt="">
+                    </div>
+                </div>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Ponte en contacto con nosotros:</p>
-        <address>
-            Correo Electrónico: <a href="mailto:info@cafeteriaelaroma.com">info@cafeteriaelaroma.com</a><br>
-            Teléfono: <a href="tel:+123456789">+123 456 789</a>
-        </address>
-        <br>
-        <button id="reservar-btn" class="boton-reserva">Reservar Mesa</button>
-    </section>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/c_brownie.png" alt="">
+                    </div>
+                </div>
 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/c_chai.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN DE CARDS -->
+
+        <br><br><br>
+
+        <div class="container">
+        <!-- <section class="servicio-container"> -->
+            <h2 class="CHB-titulo" id="servicios">SERVICIOS</h2><br>
+            <div class="servicio-boton">
+                <button class="serviciob btn-1"><a href="#">Servicios de café y alimentos</a></button>
+                <button class="serviciob btn-2"><a href="#">Catering personalizado</a></button>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <!-- INICIO CARDS -->
+        <div class="container lib">
+            <h2 class="CHB-titulo">CARTA</h2><br>
+            <div class="cards-lib-grid">
+
+                <div class="card-lib">
+                    <div class="card-lib-img">
+                        <img src="img/c_cappuccino.png" alt="">
+                    </div>
+                    <div class="card-lib-content">
+                        <h2 class="card-title">Cappuccino</h3>
+                        <h4 class="card-precio-ayb">S/ 17.90 <sup class="card-precio-ant">S/ 20.00</sup> </h4>
+                    </div>
+                </div>
+
+                <div class="card-lib">
+                    <div class="card-lib-img">
+                        <img src="img/c_chocolate.png" alt="">
+                    </div>
+                    <div class="card-lib-content">
+                        <h3 class="card-title">Chocolate con leche espumada</h3>
+                        <h4 class="card-precio-ayb">S/ 9.20 <sup class="card-precio-ant">S/ 12.00</sup> </h4>
+                    </div>
+                </div>
+
+                <div class="card-lib">
+                    <div class="card-lib-img">
+                        <img src="img/c_bminiatura.png" alt="">
+                    </div>
+                    <div class="card-lib-content">
+                        <h3 class="card-title">20 Biscochos Miniatura</h3>
+                        <h4 class="card-precio-ayb">S/ 25.90 <sup class="card-precio-ant">S/ 30.00</sup></h4>
+                    </div>
+                </div>
+
+                <div class="card-lib">
+                    <div class="card-lib-img">
+                        <img src="img/c_crujientedepiña.png" alt="">
+                    </div>
+                    <div class="card-lib-content">
+                        <h3 class="card-title">Crujiente de Piña</h3>
+                        <h4 class="card-precio-ayb">S/ 5.00 <sup class="card-precio-ant">S/ 7.00</sup></h4>
+                    </div>
+                </div>
+
+                <div class="card-lib">
+                    <div class="card-lib-img">
+                        <img src="img/c_latte.png" alt="">
+                    </div>
+                    <div class="card-lib-content">
+                        <h2 class="card-title">Latte Créme Brûlée</h3>
+                        <h4 class="card-precio-ayb">S/ 12.90 <sup class="card-precio-ant">S/ 18.20</sup> </h4>
+                    </div>
+                </div>
+
+                <div class="card-lib">
+                    <div class="card-lib-img">
+                        <img src="img/c_galleta.png" alt="">
+                    </div>
+                    <div class="card-lib-content">
+                        <h3 class="card-title">Galleta Avena con Pasas</h3>
+                        <h4 class="card-precio-ayb">S/ 5.90 <sup class="card-precio-ant">S/ 7.00</sup> </h4>
+                    </div>
+                </div>
+
+                <div class="card-lib">
+                    <div class="card-lib-img">
+                        <img src="img/c_gelatina.png" alt="">
+                    </div>
+                    <div class="card-lib-content">
+                        <h3 class="card-title">Gelatina Mosaico Fresa</h3>
+                        <h4 class="card-precio-ayb">S/ 8.50 <sup class="card-precio-ant">S/ 9.00</sup></h4>
+                    </div>
+                </div>
+
+                <div class="card-lib">
+                    <div class="card-lib-img">
+                        <img src="img/c_flan.png" alt="">
+                    </div>
+                    <div class="card-lib-content">
+                        <h3 class="card-title">Flan Napolitano Individual</h3>
+                        <h4 class="card-precio-ayb">S/ 8.00 <sup class="card-precio-ant">S/ 10.00</sup></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FINAL DE CARDS -->
     
+        <div id="reservar" class="container">
+            <form class="form-boletin" action="">
+                <h2 class="form-titulo">Reservar Mesa</h2>
+                    <input class="control" type="email"  name="email" placeholder="Ingresa tu email"><br>
+                    <button id="reservar-btn" class="form-btn">Registrar</button>
+            </form>
+        </div>
 
+        <br><br><br>
 
+    </main>
+
+    <!-- INICIO DE FOOTER -->
     <footer>
-        <p>&copy; 2023 Cafetería El Aroma</p>
-    </footer>
+        <div class="footer-content">
+            <h1 class="CHB-titulo">NUESTRAS REDES SOCIALES</h1>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
 
+            <p class="txt-footer">© 2023 Copyright Cafetería El Aroma | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <!-- FIN DE FOOTER -->    
+    
     <script src="js/script.js"></script>
+
 </body>
 </html>
